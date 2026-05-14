@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net9.0-windows</TargetFramework>
+    <OutputType>Library</OutputType>
+    <UseWindowsForms>true</UseWindowsForms>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AssemblyName>SDRSharp.FmMeter</AssemblyName>
+    <RootNamespace>SDRSharp.FmMeter</RootNamespace>
+    <Platforms>AnyCPU</Platforms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="SDRSharp.Common">
+      <HintPath>lib\SDRSharp.Common.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="SDRSharp.Radio">
+      <HintPath>lib\SDRSharp.Radio.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+</Project>
