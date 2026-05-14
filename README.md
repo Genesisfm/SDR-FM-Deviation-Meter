@@ -9,6 +9,15 @@ SDR# plugin voor WFM controlemetingen:
 
 De plugin registreert zich op de SDR# MPX/consumer stream wanneer die beschikbaar is. Als een SDR# build die streamnaam anders noemt, probeert de plugin enkele bekende alternatieven en valt als laatste terug op `FilteredAudioOutput`.
 
+## Gecompileerde versie
+Copyeer de FM Meter naar je plugin folder van SDR# 
+
+Bij moderne SDR# builds is kopieren naar `C:\SDRSharp\Plugins\FmMeter` genoeg. Voor oudere builds voeg je in `C:\SDRSharp\bin\Plugins.xml` toe:
+
+```xml
+<add key="FM Deviation Meter" value="SDRSharp.FmMeter.FmMeterPlugin,SDRSharp.FmMeter" />
+```
+
 ## Build
 
 1. Download de SDR# Plugin SDK van Airspy.
